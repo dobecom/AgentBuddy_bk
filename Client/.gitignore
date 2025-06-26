@@ -1,0 +1,55 @@
+# Build results
+bin/
+obj/
+[Bb]uild/
+[Bb]uild[Ll]og.*
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Visual Studio Code
+.vscode/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# NuGet Packages
+*.nupkg
+packages/
+*.snupkg
+
+# DotCover
+.idea/
+*.dotCover
+
+# Rider
+.idea/
+*.sln.iml
+
+# Backup & temporary files
+*.bak
+*.tmp
+*.temp
+
+# Logs
+*.log
+
+# Publish
+publish/
+
+# Others
+*.vspscc
+*.vssscc
+.vs/
+
+# Do NOT ignore source files
+!*.xaml
+!*.xaml.cs
+!*.cs
