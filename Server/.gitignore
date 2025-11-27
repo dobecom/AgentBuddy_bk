@@ -63,3 +63,6 @@ secrets.json
 !*.css
 !*.scss
 !*.html
+
+## docker
+pgdata/

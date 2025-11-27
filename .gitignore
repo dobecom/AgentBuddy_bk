@@ -1,1 +1,89 @@
 .vs
+Server
+
+# IDE / User settings
+/.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+/.idea/
+/.vscode/
+
+# Build outputs
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Bb]ld/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Dd]ebug/
+[Rr]elease/
+*.ilk
+*.pdb
+*.pch
+
+# .NET / NuGet
+**/packages/*
+!**/packages/build/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+/.dotnet/
+
+# ASP.NET (Server.API)
+Server.API/Properties/PublishProfiles/*
+Server.API/*.pubxml
+Server.API/*.publishproj
+/publish/
+Server.API/appsettings.Development.json
+Server.API/appsettings.Local.json
+Server.API/*.Development.json
+Server.API/*.Local.json
+Server.API/*.Secrets.json
+Server.API/local.settings.json
+Server.API/**/*.log
+Server.API/wwwroot/dist/
+Server.API/wwwroot/build/
+Server.API/wwwroot/node_modules/
+
+# Front-end
+node_modules/
+dist/
+build/
+
+# WPF (Client)
+Client/**/app.publish/
+Client/**/*.mdf
+Client/**/*.ldf
+Client/**/*.dbmdl
+
+# Class Libraries
+ServerServer.Core/**/*.log
+Server.Infrastructure/**/*.log
+
+# Environment & secrets
+.env
+.env.*
+*.key
+*.pem
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.swp
+*.swo
+
+# Testing / coverage
+TestResult*/
+*.trx
+coverage/
+*.coverage
+*.coveragexml
+
+# Git LFS

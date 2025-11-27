@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="Client.Views.CaseIntakeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:Client.ViewModels"
+             xmlns:local="clr-namespace:Client.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <StackPanel>
+            <Button Content="Refresh Cases" Command="{Binding RefreshCasesCommand}" />
+            <DataGrid ItemsSource="{Binding NewCases}" AutoGenerateColumns="False" IsReadOnly="True"
+                      SelectedItem="{Binding SelectedCase, Mode=TwoWay}">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Case #" Binding="{Binding CaseNumber}" />
+                    <DataGridTextColumn Header="Customer Statement" Binding="{Binding CustomerStatement}" />
+                    <DataGridTextColumn Header="Support Area" Binding="{Binding SupportAreaPath}" />
+                </DataGrid.Columns>
+            </DataGrid>
+            <!--<Button Content="Open Case" Command="{Binding OpenCaseCommand}" IsEnabled="{Binding SelectedCase, Converter={StaticResource NullToBoolConverter}}" />-->
+        </StackPanel>
+    </Grid>
+</UserControl>

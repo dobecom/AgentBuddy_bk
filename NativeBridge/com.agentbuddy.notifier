@@ -1,0 +1,9 @@
+{
+  "name": "com.agentbuddy.notifier",
+  "description": "AgentBuddy Native Messaging Host",
+  "path": "D:\\Projects\\AgentBuddy\\NativeBridge\\bin\\Debug\\net9.0\\NativeBridge.exe",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://ijdlopmkimdjmlgobgiafnemkallgfbl/"
+  ]
+}
